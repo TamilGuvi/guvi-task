@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+----------------------------page 1---------------------------
+
+.page1 {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container1 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container1 img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #3b3b3b;
+    font-weight: 500;
+}
+
+.nav:hover {
+    color: rgb(142, 102, 72);
+}
+
+.logsignup {
+    display: flex;
+    gap: 20px;
+}
+
+.login {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #3b3b3b;
+    font-weight: 500;
+}
+
+.login:hover {
+    color: rgb(142, 102, 72);
+}
+
+.signup {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #3b3b3b;
+    font-weight: 500;
+}
+
+.signup:hover {
+    color: rgb(142, 102, 72);
+}
+
+.mid {
+    width: 90%;
+    margin-top: 60px;
+    padding-left: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.txtimage {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    width: 480px;
+    margin-bottom: 20px;
+}
+
+.txtimage p {
+    width: 420px;
+    font-size: 19px;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.human {
+    width: 500px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.left-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+
+
+
+
+
+
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+    nav {
+        display: none; /* you can replace with hamburger menu later */
+    }
+
+    .container1 {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 500px) {
+    .signup {
+        padding: 8px 16px;
+    }
+}
