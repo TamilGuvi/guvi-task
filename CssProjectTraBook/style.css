@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-----------------------------page 1---------------------------
+---------------------------------------------------------1------------------------------------------------------------------
 
 .page1 {
     width: 100%;
@@ -65,16 +65,20 @@ nav {
 }
 
 .signup {
-    background: none;
+    background: rgb(255, 166, 0);
     border: none;
+    border-radius: 5px;
+    padding: 5px;
     font-size: 16px;
     cursor: pointer;
-    color: #3b3b3b;
+    color: #ffffff;
     font-weight: 500;
 }
 
 .signup:hover {
-    color: rgb(142, 102, 72);
+    color: rgb(0, 0, 0);
+    background-color: rgb(85, 210, 69);
+    transition: 0.5s;
 }
 
 .mid {
@@ -109,7 +113,7 @@ nav {
     width: 500px;
     height: auto;
     position: relative;
-    z-index: 2;
+    z-index: 2;    
 }
 
 .left-block {
@@ -117,6 +121,146 @@ nav {
     flex-direction: column;
     max-width: 450px;
 }
+
+.discover {
+    background: rgb(255, 166, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.discover:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(228, 73, 73);
+    transition: 0.5s;
+}
+
+.base { 
+    width: 380px;              
+    margin: 25px auto;            
+    padding: 18px 22px;
+    background: #fbf8e9;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.ex-options {
+    flex: 1;
+    background: none;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    height: 60px;          
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ex-button {
+    background: rgb(234, 155, 7);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    
+    padding: 10px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.ex-button:hover ,
+.ex-options:hover {
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.page2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eaeae9;
+    color: #222;
+    padding: 80px 20px;
+}
+
+.p2span {
+    color: orange;  
+    cursor: pointer;  
+}
+.p2span:hover {
+    color: rgb(0, 85, 255);    
+}
+
+.p2container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.p2container p {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.p2card-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.p2-cards
+{
+    border:none;
+    border-radius: 10px;
+    background-color:#f2f2f2;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.p2card-section img {
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+    margin-top: 10px;
+}
+.p2card-section h3 ,
+.p2card-section p {
+    margin-left: 20px;
+}
+
+.p2card-section p {
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 13px;
+}
+
+.p2-cards:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
 
 
 
