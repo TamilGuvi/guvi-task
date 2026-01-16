@@ -1,0 +1,32 @@
+body {
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr ;
+    grid-template-rows: 1fr 3fr 1fr ;
+    grid-template-areas: 
+    "header header header"
+    "aside main tamil"
+    "footer footer footer "
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+    background-color: blue;
+}
+footer {
+    grid-area: footer;
+}
+div {
+    grid-area: div;
+    background-color: blueviolet;
+}
+#content {
+    grid-area: tamil;
+}
+body > * {
+    border: 4px solid rgb(238, 124, 124);
+}
