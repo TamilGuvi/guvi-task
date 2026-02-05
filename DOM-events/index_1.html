@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagine a page with several paragraphs, 
+        You want to change the color of the text for the 
+        first paragraph and apply different style to paragraph 
+        based on their class
+    </h1>
+
+    <h2 id="main-title">Shopping lists</h2>
+    <p class="item">Item 1</p>
+    <p class="item">Item 2</p>
+    <p>Another Item</p>
+
+    <script>
+        //select by id
+        const title = document.getElementById("main-title");
+        title.style.color = "blue";
+
+        //select by class
+        const items = document.getElementsByClassName("item");
+        for (i = 0; i < items.length; i++) {
+            items[i].style.fontWeight ="bold";
+        }
+
+        //select by tag name
+        const paragraphs = document.getElementsByTagName("p");
+        paragraphs[0].style.color ="goldenrod";
+        paragraphs[1].style.color ="green";
+        paragraphs[2].style.color ="red";
+        
+        const header = document.getElementsByTagName("h1");
+        header[0].style.color ="orange";
+
+        // for (i = 0; i < paragraphs.length-1; i++) {
+        //     paragraphs[i].style.color = "red";
+        // }
+
+    </script>
+
+</body>
+</html>
