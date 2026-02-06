@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append</title>
+</head>
+<body>
+    <button id="btn">Add List</button>
+    <ul id="list"></ul>
+    <div id="div"></div>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var list = document.getElementById("list");
+        var div = document.getElementById("div");
+        let number = 1;
+
+        btn.addEventListener("click", function() {
+
+            btn.textContent = "Next"
+            var lis = document.createElement("li");
+            lis.textContent = "List "+ number;
+            list.appendChild(lis);
+
+            var pa = document.createElement("p");
+            pa.textContent = number +" Paragraph";
+            div.appendChild(pa);
+            
+            number ++;
+        })
+    </script>
+</body>
+</html>
